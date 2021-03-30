@@ -4,9 +4,9 @@ Falco Icons es una fuente de iconos basada en SVG de ligaduras diseñada para el
 
 Diseñada con Adobe Illustrator y ensamblada con FontForge. Usa una tabla de sustitución de glifos (GSUB) para almacenar todas las ligaduras.
 
-<center>
-<img src="./.img/readme/ligas_demo.gif">
-</center>
+<div align="center">
+    <img src="./.img/readme/ligas_demo.gif">
+</div>
 
 Los iconos están basados en un documento de `100x100` pixeles, usando `8pt` de grosor para el trazo, las esquinas van redondeadas a `6px` y todos los documentos `.ai` incluyen unas guías para mantener el margen de `4pt`, para evitar que el trazo del icono desborde del documento.
 
@@ -20,9 +20,9 @@ Los glifos deben ir alineados al borde izquierdo del icono en FontForge y el anc
 Las dimensiones del glifo equivalen al ancho del icono, es decir, no se alinea al centro, se ajusta al borde izquierdo del glifo y después se establece el ancho para que sea igual al del icono.
 Esto evita que haya espacios innecesarios cuando se usen los iconos, así mejora la consistencia, si no parecería una fuente monoespaciada.
 
-<center>
-<img src="./.img/readme/readme_h_alignment.png">
-</center>
+<div align="center">
+    <img src="./.img/readme/readme_h_alignment.png">
+</div>
 
 Cuando el espaciado está bien establecido, la alineación del icono no tendrá esos espacios vacíos. Esto es especialmente útil a la hora de implementarlo en el frontEnd.
 
@@ -40,3 +40,7 @@ En la carpeta de iconos hay un archivo llamado `base.ai`, este tiene las cuadrí
 Para diseñar un icono, primero hay que crear un documento de `100x100px` como se ha mencionado antes.
 Establecer las guías de `4px` para cada borde, usar `8px` de ancho de trazo y asegurarse de redondear las esquinas necesarias a `6px`.
 > La esquinas redondeadas influyen mucho en cómo se ve el icono, un diseño orgánico siempre será más agradable a uno con vértices angulados.
+
+Es importante que el icono conserve el mismo estilo: trazos gruesos; espaciado del ancho del trazo en la medida de lo posible; vértices redondeados a 6px cuando sea posible; claridad y simplicidad.
+
+Tambien es importante que el icono no desborde del documento, pues es el mayor signo de que probablemente no sea apto para su uso y a la hora de implementarlo en la interfaz, provocará problemas visuales (aunque a veces hay excepciones).
